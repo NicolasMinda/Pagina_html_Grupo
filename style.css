@@ -1,0 +1,115 @@
+/* Reseteo básico para toda la página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* =========================================
+   MENÚ DE NAVEGACIÓN
+========================================= */
+nav {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff3b3b; /* Cambia a rojo al pasar el cursor */
+}
+
+/* =========================================
+   TÍTULO PRINCIPAL
+========================================= */
+.heading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #111111;
+}
+
+/* =========================================
+   SECCIONES Y CAJAS DE LOS CARROS
+========================================= */
+section {
+  padding: 40px 20px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.caja-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   MODELO 3D
+========================================= */
+.modelo-3d {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+/* =========================================
+   TEXTO DE INFORMACIÓN
+========================================= */
+.informacion {
+  flex: 1;
+  text-align: left;
+}
+
+.informacion h3 {
+  font-size: 30px;
+  color: #222222;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #ff3b3b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.informacion p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444444;
+}
+
+/* Línea separadora entre modelos */
+hr {
+  border: 0;
+  height: 1px;
+  background: #dddddd;
+  max-width: 800px;
+  margin: 20px auto;
+}

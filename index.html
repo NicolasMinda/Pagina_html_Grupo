@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modelos 3D de Vehículos - Práctica Grupal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- MENÚ DE NAVEGACIÓN FIJO -->
+    <nav>
+      <a href="#inicio">INICIO</a>
+      <a href="#nicolas">NICOLAS MINDA</a>
+      <a href="#jonathan">JONATHAN CUALCHI</a>
+      <a href="#fernanda">FERNANDA SÁEZ</a>
+    </nav>
+
+    <!-- 1. PORTADA PRINCIPAL (CHEVROLET GENERAL) -->
+    <section
+      id="inicio"
+      style="
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1a1a1a;
+        color: white;
+        padding: 40px 10%;
+        gap: 50px;
+      "
+    >
+      <!-- Lado Izquierdo: Imagen Grande -->
+      <div style="flex: 1; display: flex; justify-content: flex-end;">
+        <img 
+          src="grup.jpeg" 
+          alt="Robot de Chevrolet" 
+          style="width: 100%; max-width: 700px; height: auto; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" 
+        />
+      </div>
+
+      <!-- Lado Derecho: Textos y Reseña -->
+      <div style="flex: 1; text-align: left;">
+        <h1
+          style="
+            font-size: 65px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+          "
+        >
+          <center>GRUPO</center>
+        </h1>
+        
+        <!-- Reseña de la marca -->
+        <p
+          style="
+            font-size: 18px;
+            color: #cccccc;
+            line-height: 1.7;
+            max-width: 550px;
+            margin-bottom: 15px;
+          "
+        >
+          Este grupo se formó desde la etapa de nivelación. Jonathan y Nicolás ya se conocían desde la infancia y, durante nivelación, conocieron a Fernanda. Desde ese momento comenzaron a compartir más tiempo, experiencias y momentos juntos, formando una amistad que se ha mantenido hasta la actualidad y que continúa fortaleciéndose durante su etapa universitaria.
+
+        </p>
+
+        <!-- Mensaje de bienvenida -->
+        <p
+          style="
+            font-size: 18px;
+            color: #cccccc;
+            line-height: 1.7;
+            max-width: 550px;
+          "
+        >
+          Bienvenido a nuestra exposición virtual grupal. Selecciona a un integrante en el menú superior para explorar los modelos interactivos en 3D que ha integrado.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         BLOQUE 1: NICOLÁS MINDA (CHEVROLET)
+    =========================================== -->
+    <section id="nicolas" style="display: block; padding-top: 100px; text-align: center;">
+      
+      <!-- Nuevo Título -->
+      <h2 style="font-size: 36px; text-transform: uppercase; color: #111; margin-bottom: 40px; border-bottom: 3px solid #ff3b3b; display: inline-block; padding-bottom: 10px;">
+        Chevrolet
+      </h2>
+      
+      <!-- Tarjeta de presentación (Imagen + Reseña + Botón) -->
+      <div style="display: flex; align-items: center; justify-content: center; gap: 40px; max-width: 900px; margin: 0 auto 50px auto; background-color: #1a1a1a; padding: 40px; border-radius: 15px; text-align: left;">
+        
+       <video src="bum.mp4" style="width: 250px; height: auto; border-radius: 10px;" autoplay loop muted playsinline controls></video>
+        
+        <!-- Textos -->
+        <div>
+          <h3 style="font-size: 28px; margin-top: 0; color: #ffffff; letter-spacing: 2px;">HISTORIA DE LA MARCA</h3>
+          <p style="font-size: 18px; line-height: 1.6; color: #cccccc; margin-bottom: 20px;">
+            Chevrolet, cariñosamente conocida como "Chevy", es una de las marcas de automóviles más icónicas a nivel mundial. Fundada en 1911, ha sido pionera en la innovación del motor y creadora de algunos de los "muscle cars" más legendarios de la historia.
+          </p>
+          
+          <!-- Botón de enlace a los modelos -->
+          <a href="#modelos-chevrolet" style="display: inline-block; padding: 12px 25px; background-color: #ff3b3b; color: white; text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; text-transform: uppercase;">
+            Ver Imágenes 3D
+          </a>
+        </div>
+      </div>
+
+      <!-- Ancla donde te enviará el botón -->
+      <div id="modelos-chevrolet" style="padding-top: 20px;">
+        
+        <!-- Vehículo 1: TRAILBLAZER -->
+        <div class="caja-horizontal" style="margin-bottom: 40px;">
+          <!-- Lado izquierdo: Imagen/Modelo 3D -->
+          <model-viewer
+            class="modelo-3d"
+            src="chevrolet/scene.gltf"
+            camera-controls
+          ></model-viewer>
+
+          <!-- Lado derecho: Descripción -->
+          <div class="informacion">
+            <h3>Chevrolet TrailBlazer</h3>
+            <p>
+              Comercializado entre 1969 y 1994, el Chevrolet K5 Blazer es un
+              emblemático SUV derivado de las camionetas C/K. Se popularizó por su
+              potente tracción 4x4 y su diseño de tres puertas con techo trasero
+              desmontable en sus primeras generaciones.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vehículo 2: CAMARO -->
+        <div class="caja-horizontal">
+          <!-- Lado izquierdo: Imagen/Modelo 3D -->
+          <model-viewer
+            class="modelo-3d"
+            src="camaro/scene.gltf"
+            camera-controls
+          ></model-viewer>
+
+          <!-- Lado derecho: Descripción -->
+          <div class="informacion">
+            <h3>Chevrolet Camaro RS/SS</h3>
+            <p>
+              El Camaro RS/SS de 1967 «Hidden Jewel» es un legendario muscle car
+              descubierto tras años de hibernación en un sótano. Destaca por su
+              potente motor big-block, interior original y sus icónicos faros
+              ocultos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         BLOQUE 2: JONATHAN GUALCHI (TRANSFORMERS)
+    =========================================== -->
+    <section id="jonathan" style="display: block; padding-top: 100px; text-align: center;">
+      
+      <!-- Nuevo Título -->
+      <h2 style="font-size: 36px; text-transform: uppercase; color: #111; margin-bottom: 40px; border-bottom: 3px solid #ff3b3b; display: inline-block; padding-bottom: 10px;">
+        Transformers - Jonathan Gualchi
+      </h2>
+      
+      <!-- Tarjeta de presentación (Imagen + Reseña + Botón) -->
+      <div style="display: flex; align-items: center; justify-content: center; gap: 40px; max-width: 900px; margin: 0 auto 50px auto; background-color: #1a1a1a; padding: 40px; border-radius: 15px; text-align: left;">
+        
+        
+        <video src="voptimus.mp4" style="width: 250px; height: auto; border-radius: 10px;" autoplay loop muted playsinline controls></video>
+        
+        <!-- Textos -->
+        <div>
+          <h3 style="font-size: 28px; margin-top: 0; color: #ffffff; letter-spacing: 2px;">EL LÍDER AUTOBOT</h3>
+          <p style="font-size: 18px; line-height: 1.6; color: #cccccc; margin-bottom: 20px;">
+            Transformers es una aclamada franquicia de entretenimiento que narra la guerra entre los nobles Autobots y los despiadados Decepticons. Liderados por el valiente Optimus Prime, estos organismos robóticos modulares tienen la capacidad de transformarse en vehículos y maquinaria de la Tierra.
+          </p>
+          
+          <!-- Botón de enlace a los modelos -->
+          <a href="#modelos-jonathan" style="display: inline-block; padding: 12px 25px; background-color: #ff3b3b; color: white; text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; text-transform: uppercase;">
+            Ver Imágenes 3D
+          </a>
+        </div>
+      </div>
+
+      <!-- Ancla donde te enviará el botón -->
+      <div id="modelos-jonathan" style="padding-top: 20px;">
+        
+        <!-- Vehículo 1: OPTIMUS -->
+        <div class="caja-horizontal" style="margin-bottom: 40px;">
+          <!-- Lado izquierdo: Imagen/Modelo 3D -->
+          <model-viewer
+            class="modelo-3d"
+            src="optimus/scene.gltf"
+            camera-controls
+          ></model-viewer>
+
+          <!-- Lado derecho: Descripción -->
+          <div class="informacion">
+            <h3>Optimus Prime</h3>
+            <p>
+              Líder indiscutible de los Autobots. Destaca por su inquebrantable sentido de la justicia y su característico diseño de camión Peterbilt 379 con llamas. Representa la esperanza en la interminable batalla por la paz del universo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vehículo 2: TRASNFORME -->
+        <div class="caja-horizontal">
+          <!-- Lado izquierdo: Imagen/Modelo 3D -->
+          <model-viewer
+            class="modelo-3d"
+            src="opti/scene.gltf"
+            camera-controls
+          ></model-viewer>
+
+          <!-- Lado derecho: Descripción -->
+          <div class="informacion">
+            <h3>Optimus Prime (Modo Vehículo) </h3>
+            <p>
+              En su imponente forma robótica, Optimus Prime está equipado con tecnología cibertroniana avanzada. Este modelo destaca su estructura mecánica compleja y su postura lista para el combate contra cualquier amenaza.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ==========================================
+         BLOQUE 3: FERNANDA SÁEZ (MOTOS YAMAHA)
+    =========================================== -->
+    <section id="fernanda" style="display: block; padding-top: 100px; text-align: center; margin-bottom: 50px;">
+      
+      <!-- Título -->
+      <h2 style="font-size: 36px; text-transform: uppercase; color: #111; margin-bottom: 40px; border-bottom: 3px solid #ff3b3b; display: inline-block; padding-bottom: 10px;">
+        Motos Deportivas - Fernanda Sáez
+      </h2>
+      
+      <!-- Tarjeta de presentación (Video + Reseña + Botón) -->
+      <div style="display: flex; align-items: center; justify-content: center; gap: 40px; max-width: 900px; margin: 0 auto 50px auto; background-color: #1a1a1a; padding: 40px; border-radius: 15px; text-align: left;">
+        
+        <!-- Video de Yamaha -->
+        <video src="yamaha.mp4" style="width: 250px; height: auto; border-radius: 10px;" autoplay loop muted playsinline controls></video>
+        
+        <!-- Textos -->
+        <div>
+          <h3 style="font-size: 28px; margin-top: 0; color: #ffffff; letter-spacing: 2px;">PASIÓN SOBRE DOS RUEDAS</h3>
+          <p style="font-size: 18px; line-height: 1.6; color: #cccccc; margin-bottom: 20px;">
+            Las motocicletas deportivas Yamaha representan la cumbre de la ingeniería de velocidad y el rendimiento en pista. Con una larga tradición en campeonatos mundiales, combinan una agilidad sobresaliente con motores de alta potencia y diseños aerodinámicos únicos.
+          </p>
+          
+          <!-- Botón de enlace a los modelos -->
+          <a href="#modelos-fernanda" style="display: inline-block; padding: 12px 25px; background-color: #ff3b3b; color: white; text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; text-transform: uppercase;">
+            Ver Imágenes 3D
+          </a>
+        </div>
+      </div>
+
+      <!-- Ancla donde te enviará el botón -->
+      <div id="modelos-fernanda" style="padding-top: 20px;">
+        
+        <!-- Vehículo 1: YAMAHA R1 -->
+        <div class="caja-horizontal" style="margin-bottom: 40px;">
+          <!-- Lado izquierdo: Imagen/Modelo 3D -->
+          <model-viewer
+            class="modelo-3d"
+            src="R1/scene.gltf"
+            camera-controls
+          ></model-viewer>
+
+          <!-- Lado derecho: Descripción -->
+          <div class="informacion">
+            <h3>Yamaha YZF-R1</h3>
+            <p>
+              La Yamaha YZF-R1 es una motocicleta deportiva de alto rendimiento introducida en 1998. Es famosa por su potente motor de 1000cc, su tecnología avanzada derivada de MotoGP y su agresivo diseño aerodinámico, ideal para dominar la pista.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vehículo 2: YAMAHA R6 -->
+        <div class="caja-horizontal">
+          <!-- Lado izquierdo: Imagen/Modelo 3D -->
+          <model-viewer
+            class="modelo-3d"
+            src="R6/scene.gltf"
+            camera-controls
+          ></model-viewer>
+
+          <!-- Lado derecho: Descripción -->
+          <div class="informacion">
+            <h3>Yamaha YZF-R6</h3>
+            <p>
+              La Yamaha YZF-R6 es una icónica motocicleta superdeportiva de 600cc. Reconocida mundialmente por su extrema agilidad en curvas y su motor de altas revoluciones, ha sido una de las motos favoritas tanto para entusiastas de la calle como para pilotos de carreras.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
